@@ -1,50 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CozyTV+ — Your screen. Your collection.</title>
-<meta name="description" content="Meet CozyTV+ for LG webOS: a big-screen media player for your own live TV, movies and series. Explore the interface, setup and support.">
-<meta name="theme-color" content="#080b10"><link rel="stylesheet" href="assets/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyTV - Media Player for Smart TVs</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --primary: #3b82f6;
+            --accent: #22c55e;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 50px; }
+        h1 { font-size: 2.5rem; margin-bottom: 12px; }
+        .badge {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        p.subtitle { font-size: 1.15rem; color: var(--muted); }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        .feature-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .feature-item h3 { font-size: 1.1rem; margin-bottom: 8px; color: #fff; }
+        .feature-item p { font-size: 0.95rem; color: var(--muted); }
+
+        .pricing-card {
+            background: var(--card);
+            border: 2px solid var(--primary);
+            border-radius: 16px;
+            padding: 35px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .price { font-size: 3rem; font-weight: 800; margin: 15px 0; color: #fff; }
+        .price span { font-size: 1rem; color: var(--muted); font-weight: normal; }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin: 20px 0 10px;
+        }
+        .notice { font-size: 0.85rem; color: var(--muted); }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding-top: 40px;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+        .legal-section { margin-bottom: 25px; }
+        .legal-section h4 { color: var(--text); margin-bottom: 6px; }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.8rem;
+        }
+    </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header><div class="nav wrap"><a class="brand" href="index.html" aria-label="CozyTV+ home">CozyTV<span>+</span></a><nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#screens">Screenshots</a><a href="#setup">Get started</a><a href="support.html">Support <span aria-hidden="true">↗</span></a></nav></div></header>
-<main id="main">
-<section class="hero wrap">
-<div class="eyebrow"><span class="dot"></span> INTRODUCING COZYTV+ FOR LG webOS</div>
-<h1>Your screen.<br>Your <span>collection.</span></h1>
-<p class="intro">Live TV, movies and series. Bring your own media together in a player made for the big screen.</p>
-<div class="actions"><a class="button primary" href="#experience">Explore the experience <span aria-hidden="true">↓</span></a><a class="button secondary" href="#setup">Getting started</a></div>
-<p class="availability">LG Content Store release in preparation</p>
-<figure class="hero-screen"><img src="assets/home.webp" width="1600" height="900" alt="CozyTV+ home screen with featured content, recently watched channels and movie collections" fetchpriority="high"><figcaption><span>THE BIG-SCREEN EXPERIENCE</span><span>CozyTV+ / Home</span></figcaption></figure>
-<p class="demo-note">Interface previews show illustrative content. CozyTV+ does not include channels, movies, series or playlists.</p>
-</section>
-<div class="feature-strip wrap"><span>Designed for LG webOS</span><span>Remote-friendly navigation</span><span>Your own media sources</span></div>
-<section class="wrap section" id="experience"><div class="section-heading"><div><p class="eyebrow">ONE PLAYER. YOUR WORLD.</p><h2>Everything feels<br>right at home.</h2></div><p>From finding a live channel to exploring your collection, a clear layout keeps your next choice within reach.</p></div>
-<article class="feature"><div class="feature-copy"><span class="number">01 / LIVE TV</span><h3>Find your channel.<br>Stay in the moment.</h3><p>Browse channel groups, move through your list and preview a stream in one view. Programme information adds context when your source provides it.</p><ul class="tags"><li>Channel groups</li><li>Live preview</li><li>Programme guide</li></ul></div><a class="screen-link" href="assets/live.webp" data-preview aria-label="Enlarge live TV screenshot"><img src="assets/live.webp" width="1600" height="900" alt="Live TV view showing channel groups, channel list, sports preview and programme information" loading="lazy"></a></article>
-<article class="feature reverse"><div class="feature-copy"><span class="number">02 / MOVIES</span><h3>A little less browsing.<br>A little more movie night.</h3><p>Explore your movie library through visual collections and featured titles. Open a movie to see its description and available details before you press play.</p><ul class="tags"><li>Visual collections</li><li>Movie details</li><li>Your watchlist</li></ul></div><a class="screen-link" href="assets/movies.webp" data-preview aria-label="Enlarge movies screenshot"><img src="assets/movies.webp" width="1600" height="900" alt="CozyTV+ movies view with a featured movie and rows of film posters" loading="lazy"></a></article>
-<article class="feature"><div class="feature-copy"><span class="number">03 / SERIES</span><h3>Make room for<br>your next favourite.</h3><p>Give your series collection a place of its own. Browse titles and explore the seasons and episodes available from your connected source.</p><ul class="tags"><li>Series library</li><li>Seasons & episodes</li><li>Featured titles</li></ul></div><a class="screen-link" href="assets/series.webp" data-preview aria-label="Enlarge series screenshot"><img src="assets/series.webp" width="1600" height="900" alt="Series library with a featured drama and a row of series posters" loading="lazy"></a></article>
-</section>
-<section class="tv-section"><div class="wrap tv-grid"><div><p class="eyebrow">MADE FOR YOUR SOFA</p><h2>A TV experience.<br>Through and through.</h2><p class="muted">Large artwork, clear focus and an interface designed around your remote.</p></div><div class="tv-points"><article><span>↔</span><div><h3>Navigate with confidence</h3><p>Move between menus and collections with directional controls and a visible selection.</p></div></article><article><span>▤</span><div><h3>Keep your collection organised</h3><p>Dedicated spaces for live TV, movies and series, with favourites and recently watched content close by.</p></div></article><article><span>＋</span><div><h3>Bring your own source</h3><p>Connect a compatible M3U playlist or Xtream Codes source you are authorised to use. Content and metadata depend on that source.</p></div></article></div></div></section>
-<section class="wrap section" id="screens"><div class="section-heading"><div><p class="eyebrow">TAKE A CLOSER LOOK</p><h2>Meet your new view.</h2></div><p>Select a screen to explore the interface in detail.</p></div><div class="gallery">
-<a href="assets/home.webp" data-preview><img src="assets/home.webp" alt="English home screen" loading="lazy"><span>Home <b>↗</b></span></a>
-<a href="assets/live.webp" data-preview><img src="assets/live.webp" alt="Live TV and programme information" loading="lazy"><span>Live TV <b>↗</b></span></a>
-<a href="assets/movies.webp" data-preview><img src="assets/movies.webp" alt="Movies collection" loading="lazy"><span>Movies <b>↗</b></span></a>
-<a href="assets/series.webp" data-preview><img src="assets/series.webp" alt="Series collection" loading="lazy"><span>Series <b>↗</b></span></a>
-<a href="assets/details.webp" data-preview><img src="assets/details.webp" alt="Movie information and playback actions" loading="lazy"><span>Movie details <b>↗</b></span></a>
-<a href="assets/home-tr.webp" data-preview><img src="assets/home-tr.webp" alt="Home screen with Turkish interface text" loading="lazy"><span>Turkish interface <b>↗</b></span></a>
-</div><p class="demo-note">Preview artwork is for presentation only. Available titles, languages and programme information depend on your media source.</p></section>
-<section class="wrap section" id="setup"><p class="eyebrow">A SIMPLE START</p><h2>From setup to sofa.</h2><div class="steps"><article><span>01</span><h3>Install CozyTV+</h3><p>The LG Content Store release is being prepared. A store link and supported-device details will be added when available.</p></article><article><span>02</span><h3>Add your media source</h3><p>Use your own compatible playlist or source credentials. CozyTV+ does not supply a playlist or content subscription.</p></article><article><span>03</span><h3>Make yourself at home</h3><p>Browse your channels and collections, choose a title and start watching content you have permission to access.</p></article></div></section>
-<section class="wrap section faq"><div><p class="eyebrow">GOOD TO KNOW</p><h2>A few answers.</h2></div><div>
-<details><summary>Does CozyTV+ include TV channels or movies?</summary><p>No. CozyTV+ is a media player. It does not provide, host, sell or distribute channels, movies, series, playlists or IPTV subscriptions. You supply your own authorised sources.</p></details>
-<details><summary>Can I download it on my LG TV now?</summary><p>The LG Content Store release is in preparation. The official download link will appear here once the application is available.</p></details>
-<details><summary>Which media sources can I add?</summary><p>CozyTV+ supports compatible M3U/M3U8 playlists and Xtream Codes sources. Stream playback depends on the source format, your network and the capabilities of your TV.</p></details>
-<details><summary>Why might artwork or programme information differ?</summary><p>Your connected sources determine the available content and metadata. The screenshots on this page are interface previews and are not an included content catalogue.</p></details>
-<details><summary>Where can I get activation or playback help?</summary><p>Visit our <a href="support.html">support page</a> or email <a href="mailto:htok2005@gmail.com">htok2005@gmail.com</a>. Include your TV model, app version and a description of the issue. Do not send passwords or private playlist credentials.</p></details>
-</div></section>
-<section class="wrap contact"><img src="assets/brand.webp" alt="CozyTV+ brand artwork" loading="lazy"><div><p class="eyebrow">HERE TO HELP</p><h2>Let's keep it simple.</h2><p>Questions about setup, activation or using CozyTV+ on your TV?</p><a class="button primary" href="support.html">Contact support <span aria-hidden="true">↗</span></a></div></section>
-</main>
-<footer class="wrap"><div class="footer-top"><a class="brand" href="index.html">CozyTV<span>+</span></a><nav aria-label="Legal navigation"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="support.html">Support</a></nav></div><p>CozyTV+ is a software media player by Cosmo Online. No content or IPTV subscription is included. Users are responsible for the rights to the media they access.</p><div class="footer-bottom"><span>© 2026 Cosmo Online</span><a href="mailto:htok2005@gmail.com">htok2005@gmail.com</a><span>LG and webOS are trademarks of their respective owners. No affiliation is implied.</span></div></footer>
-<dialog id="preview" aria-label="Screenshot preview"><button type="button" aria-label="Close screenshot">Close ×</button><img alt=""><p></p></dialog>
-<script src="assets/home.js"></script>
-</body></html>
+
+<div class="container">
+    <header>
+        <div class="badge">Designed for LG webOS & Smart TVs</div>
+        <h1>CozyTV Media Player</h1>
+        <p class="subtitle">Streamline your entertainment with a powerful, minimalist media player tailored for big screens.</p>
+    </header>
+
+    <div class="features">
+        <div class="feature-item">
+            <h3>Smooth Playback</h3>
+            <p>Optimized hardware acceleration ensures smooth 4K and FHD streaming on smart TVs.</p>
+        </div>
+        <div class="feature-item">
+            <h3>BYOD Architecture</h3>
+            <p>Bring your own data/playlists. CozyTV does not host or distribute any media content.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Remote-Friendly UI</h3>
+            <p>Engineered from the ground up for seamless navigation using standard TV remotes.</p>
+        </div>
+    </div>
+
+    <div class="pricing-card">
+        <h3>Lifetime License</h3>
+        <p style="color: var(--muted);">Unlock permanent full access on your device.</p>
+        <div class="price">$9.99 <span>/ one-time payment</span></div>
+        <a href="#purchase" class="btn">Get Lifetime Access</a>
+        <p class="notice">✨ Includes a 15-day full-featured free trial on all supported smart TVs.</p>
+    </div>
+
+    <footer>
+        <div class="legal-section">
+            <h4>Support & Contact</h4>
+            <p>For activation assistance or inquiries, contact us at: <strong>support@cozytv.app</strong></p>
+        </div>
+
+        <div class="legal-section">
+            <h4>Privacy Policy</h4>
+            <p>CozyTV respects your privacy. We do not track, collect, or store personal playback data, stream histories, or playlists. Activation data (device identifiers) is solely processed to manage license verification.</p>
+        </div>
+
+        <div class="legal-section">
+            <h4>Terms of Service & Disclaimer</h4>
+            <p>CozyTV is strictly a media player application. It does not provide, host, or link to any copyrighted streams, channels, or content. Users are strictly responsible for providing their own lawful content.</p>
+        </div>
+
+        <div class="legal-section">
+            <h4>Refund Policy</h4>
+            <p>We provide a 15-day free trial so customers can thoroughly test compatibility before buying. Due to the digital delivery of license keys, refund requests after purchase are handled on a case-by-case basis via our support email.</p>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 CozyTV. All rights reserved.
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
