@@ -75,8 +75,8 @@
 
   <h3>3.2 Entitlement and Transaction Lifecycle</h3>
   <ul>
-    <li><strong>Entitlement Metadata:</strong> The applicable premium plan or entitlement type, authorization status, and validity period where applicable.</li>
-    <li><strong>Transaction Identifiers:</strong> Internal transaction IDs and payment processor reference IDs used to verify and maintain entitlement state.</li>
+    <li><strong>Entitlement Metadata:</strong> The applicable premium plan or entitlement type (including subscription and one-time Lifetime entitlement verification), entitlement status, and validity period where applicable. Lifetime entitlements have no expiry date.</li>
+    <li><strong>Transaction Identifiers:</strong> Internal transaction IDs and payment processor reference IDs (including Lemon Squeezy order identifiers for Lifetime purchases) used to verify and maintain entitlement state.</li>
   </ul>
 
   <h2>4. Payment Processing and Service Providers</h2>
@@ -97,7 +97,7 @@
     <li><strong>Local Device Data:</strong> Temporary cached media and guide data may be removed using Clear Cache. User-added accounts, playlists, credentials, preferences, favorites, and viewing history remain on the device until you use Reset App, clear the application's storage through the operating system, or uninstall CozyTV+.</li>
     <li><strong>Backend Entitlement & Trial Records:</strong> Pseudonymous device identifiers, trial records, and entitlement metadata are retained in our Cloudflare D1 database for as long as necessary to prevent repeat-trial abuse, maintain and restore premium entitlements, and operate the service. There is currently no automated database deletion schedule.</li>
     <li><strong>Manual Deletion Requests:</strong> You may request the deletion of your pseudonymous device record from our backend database at any time by emailing <a href="mailto:htok2005@gmail.com">htok2005@gmail.com</a> with your CozyTV+ Device Code.</li>
-    <li><strong>Impact of Deletion:</strong> Deleting backend device records removes CozyTV+'s entitlement association for that device. This may cause loss of Premium access, including any permanent entitlement if applicable, until entitlement is restored or revalidated where possible. Backend deletion does not automatically cancel recurring billing or delete merchant records held by Lemon Squeezy.</li>
+    <li><strong>Impact of Deletion:</strong> Deleting backend device records removes CozyTV+'s entitlement association for that device. This includes any Lifetime Premium entitlement association — the Lifetime entitlement may be lost if the backend device record is deleted. This is separate from subscription cancellation: cancelling a subscription stops future renewal charges; deleting a device record removes CozyTV+ backend data only. Lemon Squeezy merchant and order records (including Lifetime purchase records) are not automatically deleted. Backend deletion does not automatically cancel recurring billing.</li>
   </ul>
 
   <h2>7. Contact Us</h2>
